@@ -1,0 +1,14 @@
+Main prompt:
+“Create a very simple Streamlit app in Python that connects to my PostgreSQL database pagila_dwh and reads from the view vw_rental_analysis.
+Show two reports on the same page: 1. a bar chart of rentals or revenue by film_category,
+and 2. a line chart of monthly rental trends (rentals or revenue) using year and month.
+Use psycopg2 and Plotly, keep the code clean and easy to understand.”
+
+What worked well:
+- Connecting to PostgreSQL with psycopg2 and validating the connection with a quick COUNT(*)
+- Using simple SQL GROUP BY queries to aggregate data for both charts
+- Plotly + Streamlit made it easy to display the charts and data tables
+
+Good to know:
+- Streamlit apps must be started with streamlit run main.py in terminal
+- Exact database login needed using the correct existing PostgreSQL user and password
